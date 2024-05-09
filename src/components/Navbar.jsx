@@ -47,7 +47,7 @@ const Navbar = () => {
       {!mobileNav && (
         <nav className="max-w-screen bg-transparent px-5 py-5 flex justify-between items-center gap-3">
           <Logo color="white" />
-          <button className="flex items-center gap-5">
+          <div className="flex items-center gap-5">
             <GiHamburgerMenu
               size={40}
               className="text-white hover:text-red-700 duration-200 transition-all"
@@ -65,12 +65,12 @@ const Navbar = () => {
               size={30}
             />
             <div className="cursor-pointer pl-2 h-[65px] w-[250px] border border-white justify-start items-center gap-2 rounded-md hidden md:flex">
-              <button className="transform hover:rotate-360 transition duration-700 ease-in-out h-[45px] w-[45px] bg-red-700 flex justify-center items-center rounded-md">
+              <div className="transform hover:rotate-360 transition duration-700 ease-in-out h-[45px] w-[45px] bg-red-700 flex justify-center items-center rounded-md">
                 <FiPlus className="text-white" size={25} />
-              </button>
+              </div>
               <p className="text-white font-bold">Join Class Now</p>
             </div>
-          </button>
+          </div>
         </nav>
       )}
     </>
