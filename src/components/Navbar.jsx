@@ -36,7 +36,7 @@ const Navbar = () => {
     <>
       {mobileNav && (
         <>
-          <div className="fixed inset-0 text-black text-2xl h-screen max-w-screen flex flex-col justify-center items-center gap-7 bg-slate-100 duration-700 z-50">
+          <div className="fixed inset-0 text-black text-2xl h-screen w-screen flex flex-col justify-center items-center gap-7 bg-slate-100 duration-700 z-50">
             <BiX
               size={40}
               className="text-black hover:text-red-700 duration-200 transition-all cursor-pointer fixed top-5 right-5 "
@@ -64,9 +64,9 @@ const Navbar = () => {
           <nav
             className={`${
               isScrolled
-                ? "bg-black w-screen fixed px-5 py-5 flex justify-between items-center gap-3"
-                : "bg-transparent w-screen fixed px-5 py-5 flex justify-between items-center gap-3"
-            } ${mobileNav && "hidden"}transition-colors duration-500 z-50`}
+                ? "bg-black w-screen fixed px-5 py-5 flex justify-between items-center gap-3 transition-colors duration-500"
+                : "bg-transparent w-screen fixed px-5 py-5 flex justify-between items-center gap-3 transition-colors duration-500"
+            } ${mobileNav && "hidden"} z-50`}
           >
             <Logo color="white" />
             <div className="flex items-center gap-5">
