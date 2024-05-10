@@ -25,7 +25,7 @@ const Navbar = () => {
         <>
           <BiX
             size={40}
-            className="text-black hover:text-red-700 duration-200 transition-all absolute top-5 right-5 cursor-pointer"
+            className="text-black hover:text-red-700 duration-200 transition-all top-5 right-5 cursor-pointer"
             onClick={() => {
               setMobileNav(false);
             }}
@@ -45,7 +45,7 @@ const Navbar = () => {
         </>
       )}
       {!mobileNav && (
-        <nav className="max-w-screen bg-transparent px-5 py-5 flex justify-between items-center gap-3">
+        <nav className="w-screen absolute bg-transparent px-5 py-5 flex justify-between items-center gap-3">
           <Logo color="white" />
           <div className="flex items-center gap-5">
             <GiHamburgerMenu
