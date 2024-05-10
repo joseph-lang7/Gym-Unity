@@ -27,9 +27,10 @@ const Navbar = () => {
         <>
           <BiX
             size={40}
-            className="text-black hover:text-red-700 duration-200 transition-all top-5 right-5 cursor-pointer"
+            className="text-black hover:text-red-700 duration-200 transition-all cursor-pointer absolute top-5 right-5 "
             onClick={() => {
               setMobileNav(false);
+              document.body.style.overflow = "scroll";
             }}
           />
 
@@ -48,7 +49,7 @@ const Navbar = () => {
       )}
       {!mobileNav && (
         <>
-          <nav className="w-screen absolute bg-transparent px-5 py-5 flex justify-between items-center gap-3">
+          <nav className="w-full absolute bg-transparent px-5 py-5 flex justify-between items-center gap-3">
             <Logo color="white" />
             <div className="flex items-center gap-5">
               <GiHamburgerMenu
@@ -56,6 +57,7 @@ const Navbar = () => {
                 className="text-white hover:text-red-700 duration-200 transition-all cursor-pointer"
                 onClick={() => {
                   setMobileNav(true);
+                  document.body.style.overflow = "hidden";
                 }}
               />
 
