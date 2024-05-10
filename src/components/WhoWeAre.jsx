@@ -1,10 +1,8 @@
 import { BsPersonCheck } from "react-icons/bs";
 import { BiRun } from "react-icons/bi";
 import { GrYoga } from "react-icons/gr";
-import { FaArrowRightLong } from "react-icons/fa6";
-import { useState } from "react";
+import Button from "./Button";
 export const WhoWeAre = () => {
-  const [shiftArrow, setShiftArrow] = useState(false);
   return (
     <div className="flex max-w-screen h-[800px] justify-center">
       <div className="w-screen h-full flex justify-center max-w-[1500px] px-5">
@@ -45,18 +43,7 @@ export const WhoWeAre = () => {
               </h4>
             </div>
           </div>
-          <button
-            className="flex items-center gap-2 px-5 py-3 mt-10 w-[200px] rounded-md bg-slate-800 text-white relative hover:shadow-xl hover:scale-105 transition-all duration-500 hover:bg-red-700 hover:text-white"
-            onMouseEnter={() => setShiftArrow(true)}
-            onMouseLeave={() => setShiftArrow(false)}
-          >
-            Take A Tour
-            <FaArrowRightLong
-              className={`${
-                shiftArrow && "translate-x-2"
-              }  transition-transform duration-500`}
-            />
-          </button>
+          <Button bgColor="bg-slate-800" textColor="text-white" />
         </div>
         <div
           className="flex-1 hidden lg:block bg-contain bg-right h-auto bg-no-repeat"

@@ -1,11 +1,9 @@
-import { FaArrowRightLong } from "react-icons/fa6";
-import { useState } from "react";
 import { TfiLinkedin } from "react-icons/tfi";
 import { BsTwitterX } from "react-icons/bs";
 import { FaFacebook } from "react-icons/fa";
+import Button from "./Button";
 
 const Hero = () => {
-  const [shiftArrow, setShiftArrow] = useState(false);
   return (
     <div
       className=" h-screen max-w-screen bg-cover bg-center flex justify-center "
@@ -24,18 +22,7 @@ const Hero = () => {
               <h3 className="font-bold">MAKE YOUR BODY</h3>
               <h3>FIT & PERFECT</h3>
             </div>
-            <button
-              className="flex items-center gap-2 px-5 py-3 mt-10 w-[200px] rounded-md bg-white text-black relative hover:shadow-xl hover:scale-105 transition-all duration-500 hover:bg-red-700 hover:text-white"
-              onMouseEnter={() => setShiftArrow(true)}
-              onMouseLeave={() => setShiftArrow(false)}
-            >
-              Our Classes
-              <FaArrowRightLong
-                className={`${
-                  shiftArrow && "translate-x-2"
-                }  transition-transform duration-500`}
-              />
-            </button>
+            <Button bgColor="bg-white" textColor="text-black" />
           </div>
           <div className="hidden lg:flex lg:flex-col lg:items-center gap-4 text-white">
             <p className=" h-full rotate-90 font-bold text-center mb-4">
