@@ -5,6 +5,7 @@ import Logo from "./Logo";
 import { useState } from "react";
 import { BiX } from "react-icons/bi";
 import { GiHamburgerMenu } from "react-icons/gi";
+import AboutSlidingCard from "./AboutSlidingCard";
 
 const Navbar = () => {
   const navItems = [
@@ -18,6 +19,7 @@ const Navbar = () => {
   ];
 
   const [mobileNav, setMobileNav] = useState(false);
+  const [aboutSection, setAboutSection] = useState(false);
 
   return (
     <>
@@ -45,33 +47,41 @@ const Navbar = () => {
         </>
       )}
       {!mobileNav && (
-        <nav className="w-screen absolute bg-transparent px-5 py-5 flex justify-between items-center gap-3">
-          <Logo color="white" />
-          <div className="flex items-center gap-5">
-            <GiHamburgerMenu
-              size={40}
-              className="text-white hover:text-red-700 duration-200 transition-all cursor-pointer"
-              onClick={() => {
-                setMobileNav(true);
-              }}
-            />
+        <>
+          <nav className="w-screen absolute bg-transparent px-5 py-5 flex justify-between items-center gap-3">
+            <Logo color="white" />
+            <div className="flex items-center gap-5">
+              <GiHamburgerMenu
+                size={40}
+                className="text-white hover:text-red-700 duration-200 transition-all cursor-pointer"
+                onClick={() => {
+                  setMobileNav(true);
+                }}
+              />
 
-            <FaRegUser
-              className="text-white hover:text-red-700 duration-200 cursor-pointer"
-              size={30}
-            />
-            <FaChartBar
-              className="text-white hover:text-red-700 duration-200 cursor-pointer"
-              size={30}
-            />
-            <div className="cursor-pointer pl-2 h-[65px] w-[250px] border border-white justify-start items-center gap-2 rounded-md hidden md:flex">
-              <div className="transform hover:rotate-360 transition duration-700 ease-in-out h-[45px] w-[45px] bg-red-700 flex justify-center items-center rounded-md">
-                <FiPlus className="text-white" size={25} />
+              <FaRegUser
+                className="text-white hover:text-red-700 duration-200 cursor-pointer"
+                size={30}
+              />
+              <FaChartBar
+                className="text-white hover:text-red-700 duration-200 cursor-pointer"
+                size={30}
+                onClick={() => {
+                  setAboutSection(!aboutSection);
+                }}
+              />
+              <div className="cursor-pointer pl-2 h-[65px] w-[250px] border border-white justify-start items-center gap-2 rounded-md hidden md:flex">
+                <div className="transform hover:rotate-360 transition duration-700 ease-in-out h-[45px] w-[45px] bg-red-700 flex justify-center items-center rounded-md">
+                  <FiPlus className="text-white" size={25} />
+                </div>
+                <p className="text-white font-bold">Join Class Now</p>
               </div>
-              <p className="text-white font-bold">Join Class Now</p>
             </div>
-          </div>
-        </nav>
+          </nav>
+          {aboutSection && (
+            <AboutSlidingCard handleClose={() => setAboutSection(false)} />
+          )}
+        </>
       )}
     </>
   );
