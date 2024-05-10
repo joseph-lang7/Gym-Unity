@@ -22,7 +22,7 @@ export const WhoWeAre = () => {
             Take your health and body to the next level with our comprehensive
             program designed to help you reach your fitness goals.
           </p>
-          <div className="flex w-full flex-col justify-center sm:flex-row px-5">
+          <div className="flex w-full flex-col justify-center lg:justify-start sm:flex-row gap-7 sm:gap-0">
             <div className="flex flex-col gap-2 items-center ">
               <BsPersonCheck size={80} className="text-red-700" />
 
