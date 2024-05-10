@@ -29,8 +29,8 @@ const BenefitCard = ({
 BenefitCard.propTypes = {
   benefit: PropTypes.string,
   description: PropTypes.string,
-  icon: PropTypes.elementType,
-  isHovered: PropTypes.func,
+  icon: PropTypes.object,
+  isHovered: PropTypes.bool,
   mouseEnter: PropTypes.func,
   mouseLeave: PropTypes.func,
 };

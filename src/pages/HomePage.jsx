@@ -1,6 +1,6 @@
-import Benefits from "../components/Benefits";
-import Hero from "../components/Hero";
-import WhoWeAre from "../components/WhoWeAre";
+import Benefits from "../sections/Benefits";
+import Hero from "../sections/Hero";
+import WhoWeAre from "../sections/WhoWeAre";
 const HomePage = () => {
   return (
     <>

@@ -1,7 +1,7 @@
 import { BsPersonCheck } from "react-icons/bs";
 import { BiRun } from "react-icons/bi";
 import { GrYoga } from "react-icons/gr";
-import Button from "./Button";
+import Button from "../components/Button";
 export const WhoWeAre = () => {
   return (
     <div className="flex max-w-screen h-[800px] justify-center">

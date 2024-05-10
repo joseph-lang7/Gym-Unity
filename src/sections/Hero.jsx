@@ -1,7 +1,7 @@
 import { TfiLinkedin } from "react-icons/tfi";
 import { BsTwitterX } from "react-icons/bs";
 import { FaFacebook } from "react-icons/fa";
-import Button from "./Button";
+import Button from "../components/Button";
 
 const Hero = () => {
   return (

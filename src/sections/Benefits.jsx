@@ -1,5 +1,5 @@
 import { useState } from "react";
-import BenefitCard from "./BenefitCard";
+import BenefitCard from "../components/BenefitCard";
 import { FaClockRotateLeft } from "react-icons/fa6";
 import { FaDumbbell } from "react-icons/fa6";
 import { FaClipboardList } from "react-icons/fa";
