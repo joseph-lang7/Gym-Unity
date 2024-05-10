@@ -12,6 +12,7 @@ import { FaSquareXTwitter } from "react-icons/fa6";
 import { PiInstagramLogoFill } from "react-icons/pi";
 import { FaPhoneAlt } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
+import PropTypes from "prop-types";
 
 const AboutSlidingCard = ({ handleClose }) => {
   return (
@@ -96,6 +97,9 @@ const AboutSlidingCard = ({ handleClose }) => {
       </div>
     </div>
   );
+};
+AboutSlidingCard.propTypes = {
+  handleClose: PropTypes.func,
 };
 
 export default AboutSlidingCard;

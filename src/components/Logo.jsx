@@ -1,5 +1,5 @@
 import { FaDumbbell } from "react-icons/fa6";
-
+import PropTypes from "prop-types";
 const Logo = ({ color }) => {
   return (
     <div className="flex justify-center items-center gap-2 cursor-pointer">
@@ -14,6 +14,9 @@ const Logo = ({ color }) => {
       </div>
     </div>
   );
+};
+Logo.propTypes = {
+  color: PropTypes.string,
 };
 
 export default Logo;

@@ -1,5 +1,6 @@
 import { FaArrowRightLong } from "react-icons/fa6";
 import { useState } from "react";
+import PropTypes from "prop-types";
 
 const Button = ({ bgColor, textColor }) => {
   const [shiftArrow, setShiftArrow] = useState(false);
@@ -18,6 +19,10 @@ const Button = ({ bgColor, textColor }) => {
       />
     </button>
   );
+};
+Button.propTypes = {
+  bgColor: PropTypes.string,
+  textColor: PropTypes.string,
 };
 
 export default Button;

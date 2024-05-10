@@ -1,3 +1,5 @@
+import PropTypes from "prop-types";
+
 const BenefitCard = ({
   benefit,
   description,
@@ -23,6 +25,14 @@ const BenefitCard = ({
       </div>
     </div>
   );
+};
+BenefitCard.propTypes = {
+  benefit: PropTypes.string,
+  description: PropTypes.string,
+  icon: PropTypes.elementType,
+  isHovered: PropTypes.func,
+  mouseEnter: PropTypes.func,
+  mouseLeave: PropTypes.func,
 };
 
 export default BenefitCard;
