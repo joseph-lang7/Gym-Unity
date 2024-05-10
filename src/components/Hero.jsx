@@ -16,7 +16,7 @@ const Hero = () => {
           <div className="flex flex-col gap-2">
             <div
               className="w-[300px] translate-x-[-25px] h-[60px] bg-cover text-black flex items-center justify-start"
-              style={{ backgroundImage: "url(/text-bg.png)" }}
+              style={{ backgroundImage: "url(/white-text-bg.png)" }}
             >
               <p className="translate-x-16 translate-y-3">Find Your Energy</p>
             </div>
