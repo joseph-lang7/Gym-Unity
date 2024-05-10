@@ -43,7 +43,11 @@ export const WhoWeAre = () => {
               </h4>
             </div>
           </div>
-          <Button bgColor="bg-slate-800" textColor="text-white" />
+          <Button
+            bgColor="bg-slate-800"
+            textColor="text-white"
+            content="TAKE A TOUR"
+          />
         </div>
         <div
           className="flex-1 hidden lg:block bg-contain bg-right h-auto bg-no-repeat"

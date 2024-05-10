@@ -22,7 +22,11 @@ const Hero = () => {
               <h3 className="font-bold">MAKE YOUR BODY</h3>
               <h3>FIT & PERFECT</h3>
             </div>
-            <Button bgColor="bg-white" textColor="text-black" />
+            <Button
+              bgColor="bg-white"
+              textColor="text-black"
+              content="OUR CLASSES"
+            />
           </div>
           <div className="hidden lg:flex lg:flex-col lg:items-center gap-4 text-white">
             <p className=" h-full rotate-90 font-bold text-center mb-4">
