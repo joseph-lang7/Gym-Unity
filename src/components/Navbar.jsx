@@ -20,36 +20,54 @@ const Navbar = () => {
 
   const [mobileNav, setMobileNav] = useState(false);
   const [aboutSection, setAboutSection] = useState(false);
+  const [isScrolled, setIsScrolled] = useState(false);
+
+  const handleColorChange = () => {
+    if (window.scrollY >= 100) {
+      setIsScrolled(true);
+    } else {
+      setIsScrolled(false);
+    }
+  };
+
+  window.addEventListener("scroll", handleColorChange);
 
   return (
     <>
       {mobileNav && (
         <>
-          <BiX
-            size={40}
-            className="text-black hover:text-red-700 duration-200 transition-all cursor-pointer absolute top-5 right-5 "
-            onClick={() => {
-              setMobileNav(false);
-              document.body.style.overflow = "scroll";
-            }}
-          />
-
-          <ul
-            className={`${
-              mobileNav ? "top-0" : "top-[-200vh] "
-            } text-black text-2xl h-screen flex flex-col justify-center items-center gap-7 bg-slate-100 duration-700`}
-          >
-            {navItems.map((navItem) => (
-              <li key={navItem.href}>
-                <a href={navItem.href}>{navItem.label}</a>
-              </li>
-            ))}
-          </ul>
+          <div className="fixed inset-0 text-black text-2xl h-screen max-w-screen flex flex-col justify-center items-center gap-7 bg-slate-100 duration-700 z-50">
+            <BiX
+              size={40}
+              className="text-black hover:text-red-700 duration-200 transition-all cursor-pointer fixed top-5 right-5 "
+              onClick={() => {
+                setMobileNav(false);
+                document.body.style.overflow = "scroll";
+              }}
+            />
+            <ul
+              className={`${
+                mobileNav ? "top-0" : "top-[-200vh] "
+              } text-black text-2xl h-full w-full flex flex-col justify-center items-center gap-7 bg-slate-100 duration-700`}
+            >
+              {navItems.map((navItem) => (
+                <li key={navItem.href}>
+                  <a href={navItem.href}>{navItem.label}</a>
+                </li>
+              ))}
+            </ul>
+          </div>
         </>
       )}
       {!mobileNav && (
         <>
-          <nav className="w-full absolute bg-transparent px-5 py-5 flex justify-between items-center gap-3">
+          <nav
+            className={`${
+              isScrolled
+                ? "bg-black w-screen fixed px-5 py-5 flex justify-between items-center gap-3"
+                : "bg-transparent w-screen fixed px-5 py-5 flex justify-between items-center gap-3"
+            } ${mobileNav && "hidden"}transition-colors duration-500 z-50`}
+          >
             <Logo color="white" />
             <div className="flex items-center gap-5">
               <GiHamburgerMenu
