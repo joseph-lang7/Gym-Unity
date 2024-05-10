@@ -2,7 +2,7 @@ import { FaDumbbell } from "react-icons/fa6";
 
 const Logo = ({ color }) => {
   return (
-    <div className="flex justify-center items-center gap-2">
+    <div className="flex justify-center items-center gap-2 cursor-pointer">
       <FaDumbbell size={60} className="text-red-700" />
       <div>
         <h3 className={`text-${color} text-xl font-bold hidden sm:block`}>

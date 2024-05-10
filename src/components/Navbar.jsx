@@ -50,18 +50,18 @@ const Navbar = () => {
           <div className="flex items-center gap-5">
             <GiHamburgerMenu
               size={40}
-              className="text-white hover:text-red-700 duration-200 transition-all"
+              className="text-white hover:text-red-700 duration-200 transition-all cursor-pointer"
               onClick={() => {
                 setMobileNav(true);
               }}
             />
 
             <FaRegUser
-              className="text-white hover:text-red-700 duration-200"
+              className="text-white hover:text-red-700 duration-200 cursor-pointer"
               size={30}
             />
             <FaChartBar
-              className="text-white hover:text-red-700 duration-200"
+              className="text-white hover:text-red-700 duration-200 cursor-pointer"
               size={30}
             />
             <div className="cursor-pointer pl-2 h-[65px] w-[250px] border border-white justify-start items-center gap-2 rounded-md hidden md:flex">
