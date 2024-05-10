@@ -10,7 +10,7 @@ const Benefits = () => {
   const [isHovered3, setIsHovered3] = useState(false);
   return (
     <div className="flex justify-center">
-      <div className="flex flex-col lg:flex-row gap-5 px-1 max-w-[1500px] ">
+      <div className="flex flex-col lg:flex-row gap-5 px-5 max-w-[1500px] ">
         <BenefitCard
           icon={<FaClockRotateLeft size={70} />}
           benefit="PROGRESSION"
