@@ -4,7 +4,7 @@ import { GrYoga } from "react-icons/gr";
 import Button from "../components/Button";
 export const WhoWeAre = () => {
   return (
-    <div className="flex max-w-screen h-[900px] justify-center ">
+    <div className="flex max-w-screen h-[1200px] md:h-[900px] justify-center ">
       <div className="w-screen h-full flex justify-center max-w-[1500px] px-5">
         <div className="flex-1 h-full flex flex-col justify-center items-center lg:items-start gap-5 w-full">
           <div

@@ -16,7 +16,7 @@ import PropTypes from "prop-types";
 
 const AboutSlidingCard = ({ handleClose }) => {
   return (
-    <div className="max-w-[500px] h-screen overflow-y-auto fixed bg-white p-5 flex flex-col gap-5 z-20 ">
+    <div className="max-w-[500px] h-screen overflow-y-auto fixed bg-white p-5 flex flex-col gap-5 z-50 ">
       <div className="flex justify-between items-center">
         <Logo color="black" />
         <BiX
