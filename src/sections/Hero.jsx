@@ -26,7 +26,7 @@ const Hero = () => {
               bgColor="bg-white"
               textColor="text-black"
               content="OUR CLASSES"
-              width="220"
+              width="250"
             />
           </div>
           <div className="hidden lg:flex lg:flex-col lg:items-center gap-4 text-white">
