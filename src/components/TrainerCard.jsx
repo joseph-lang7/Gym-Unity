@@ -1,10 +1,14 @@
-import trainer1 from "/trainers/trainer-1.png";
 import { useState } from "react";
-const TrainerCard = () => {
+import { FaFacebook } from "react-icons/fa";
+import { FaSquareXTwitter } from "react-icons/fa6";
+import { RiInstagramFill } from "react-icons/ri";
+import { IoMailSharp } from "react-icons/io5";
+import PropTypes from "prop-types";
+const TrainerCard = ({ trainerImage, trainerName, jobTitle }) => {
   const [isHovered, setIsHovered] = useState(false);
   return (
     <div
-      className={`flex flex-col bg-white w-[250px] sm:w-[400px] h-[500px] cursor-pointer rounded-md `}
+      className={`flex flex-col bg-white w-[300px] sm:w-[400px] h-[500px] cursor-pointer rounded-md `}
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
     >
@@ -15,17 +19,34 @@ const TrainerCard = () => {
         <img
           className={`${
             isHovered
-              ? "grayscale-0 h-full w-full object-contain transition-all duration-500 cursor-pointer"
-              : "h-full w-full object-contain grayscale transition-all duration-500 cursor-pointer"
+              ? "grayscale-0 h-[350px] w-full object-cover transition-all duration-500 cursor-pointer"
+              : "h-[350px] w-full object-cover grayscale transition-all duration-500 cursor-pointer"
           }`}
-          src={trainer1}
+          src={trainerImage}
           alt="Trainer"
         />
       </div>
       <div className="flex-1 w-full h-full flex flex-col justify-center items-center">
-        <h4 className="font-bold text-2xl">Trainer Name</h4>
-        <p className="text-slate-500">Job Title</p>
-        <div>Social Icons</div>
+        <h4 className="font-bold text-2xl">{trainerName}</h4>
+        <p className="text-slate-500">{jobTitle}</p>
+        <div className="flex gap-3 mt-2">
+          <FaFacebook
+            className="cursor-pointer hover:text-red-700 transition-colors duration-300"
+            size={25}
+          />
+          <FaSquareXTwitter
+            className="cursor-pointer hover:text-red-700 transition-colors duration-300"
+            size={25}
+          />
+          <RiInstagramFill
+            className="cursor-pointer hover:text-red-700 transition-colors duration-300"
+            size={25}
+          />
+          <IoMailSharp
+            className="cursor-pointer hover:text-red-700 transition-colors duration-300"
+            size={25}
+          />
+        </div>
       </div>
       <div className="w-full relative">
         <div
@@ -38,6 +59,11 @@ const TrainerCard = () => {
       </div>
     </div>
   );
+};
+TrainerCard.propTypes = {
+  trainerImage: PropTypes.elementType,
+  trainerName: PropTypes.string,
+  jobTitle: PropTypes.string,
 };
 
 export default TrainerCard;
