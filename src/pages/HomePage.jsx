@@ -5,6 +5,7 @@ import WhoWeAre from "../sections/WhoWeAre";
 import WhyUs from "../sections/WhyUs";
 import Trainers from "../sections/Trainers";
 import Testimonials from "../sections/Testimonials";
+import FeaturedOnBanner from "../components/FeaturedOnBanner";
 const HomePage = () => {
   return (
     <>
@@ -15,6 +16,7 @@ const HomePage = () => {
       <WhyUs />
       <Trainers />
       <Testimonials />
+      <FeaturedOnBanner />
     </>
   );
 };
