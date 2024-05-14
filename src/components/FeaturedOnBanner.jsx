@@ -34,6 +34,7 @@ const FeaturedOnBanner = () => {
           alt="Logo icon 5"
         />
       </div>
+      <span className="h-[1px] max-w-screen inline-block bg-black opacity-30"></span>
     </div>
   );
 };
