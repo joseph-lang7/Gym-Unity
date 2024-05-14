@@ -25,7 +25,7 @@ const Testimonials = () => {
 
         <div className="relative flex w-full flex-col flex-[2] text-white h-[400px] bg-black items-start xl:pl-20 pl-5 lg:py-8 lg:pr-10 gap-2 text-sm xl:text-base p-3">
           <PiQuotesBold className="text-4xl xl:text-6xl" />
-          <p className="italic text-slate-300">
+          <p className="italic text-slate-300 text-xs sm:text-sm">
             &quot;For the last eight months, I&apos;ve dedicated myself to
             GymUnity, and it&apos;s been an incredible journey. The trainers
             here are not only highly supportive but also incredibly
@@ -37,7 +37,7 @@ const Testimonials = () => {
             <h5 className="text-xs xl:text-sm italic">San Francisco, CA</h5>
           </div>
           <div className="absolute bottom-0 right-[10px] text-red-700">
-            <CgGym size={150} />
+            <CgGym className="text-5xl sm:text-7xl" />
           </div>
         </div>
       </div>
