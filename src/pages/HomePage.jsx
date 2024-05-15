@@ -7,6 +7,7 @@ import Trainers from "../sections/Trainers";
 import Testimonials from "../sections/Testimonials";
 import FeaturedOnBanner from "../components/FeaturedOnBanner";
 import Gallery from "../components/Gallery";
+import BMICalculator from "../components/BMICalculator";
 const HomePage = () => {
   return (
     <>
@@ -19,6 +20,7 @@ const HomePage = () => {
       <Testimonials />
       <FeaturedOnBanner />
       <Gallery />
+      <BMICalculator />
     </>
   );
 };

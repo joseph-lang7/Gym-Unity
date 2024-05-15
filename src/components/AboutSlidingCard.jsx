@@ -5,7 +5,7 @@ import dumbbells2 from "/gymPhotos/dumbbells2.jpg";
 import flexing from "/gymPhotos/flexing.jpg";
 import rope from "/gymPhotos/rope.jpg";
 import squatting from "/gymPhotos/squatting.jpg";
-import squatting2 from "/gymPhotos/squatting2.jpg";
+import powerCleaning from "/gymPhotos/power-clean.jpg";
 import { FaLocationDot } from "react-icons/fa6";
 import { FaFacebook } from "react-icons/fa";
 import { FaSquareXTwitter } from "react-icons/fa6";
@@ -45,22 +45,22 @@ const AboutSlidingCard = ({ handleClose }) => {
           <img
             className=" object-cover w-[125px] h-[125px] rounded-md"
             src={flexing}
-            alt="Person using dumbbells"
+            alt="Person flexing"
           />
           <img
             className=" object-cover w-[125px] h-[125px] rounded-md"
             src={squatting}
-            alt="Person using dumbbells"
+            alt="Person squatting"
           />
           <img
             className=" object-cover w-[125px] h-[125px] rounded-md"
             src={rope}
-            alt="Person using dumbbells"
+            alt="Person using ropes"
           />
           <img
             className=" object-cover w-[125px] h-[125px] rounded-md"
-            src={squatting2}
-            alt="Person using dumbbells"
+            src={powerCleaning}
+            alt="Person power cleaning"
           />
           <img
             className=" object-cover w-[125px] h-[125px] rounded-md"
