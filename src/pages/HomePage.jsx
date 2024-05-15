@@ -6,6 +6,7 @@ import WhyUs from "../sections/WhyUs";
 import Trainers from "../sections/Trainers";
 import Testimonials from "../sections/Testimonials";
 import FeaturedOnBanner from "../components/FeaturedOnBanner";
+import Gallery from "../components/Gallery";
 const HomePage = () => {
   return (
     <>
@@ -17,6 +18,7 @@ const HomePage = () => {
       <Trainers />
       <Testimonials />
       <FeaturedOnBanner />
+      <Gallery />
     </>
   );
 };
