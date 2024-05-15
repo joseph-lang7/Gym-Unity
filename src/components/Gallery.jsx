@@ -10,9 +10,8 @@ const Gallery = () => {
         </p>
       </div>
       <p className=" max-w-[700px] text-center">
-        Our Workplace Gallery features modern office, team collaboration, and
-        fun culture. Attracts talents and showcases company&apos;s work
-        atmosphere.
+        Explore our vibrant gallery showcasing the energy, dedication, and
+        transformation of our members on their fitness journey.
       </p>
       <div className="flex flex-col gap-3 w-full max-w-[1500px] justify-center">
         <div className="grid grid-cols-4 grid-rows-3 gap-1 w-full h-[700px]">
