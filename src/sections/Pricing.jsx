@@ -1,7 +1,7 @@
 import PricingCard from "../components/PricingCard";
 const Pricing = () => {
   return (
-    <div className="max-w-screen flex flex-col items-center mb-[200px]">
+    <div className="max-w-screen flex flex-col items-center mb-20">
       <div className="flex flex-col gap-5 items-center w-full">
         <div
           className="w-[300px] h-[60px] bg-cover text-black flex items-center justify-start"

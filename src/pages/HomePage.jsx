@@ -9,6 +9,7 @@ import FeaturedOnBanner from "../components/FeaturedOnBanner";
 import Gallery from "../components/Gallery";
 import BMICalculator from "../components/BMICalculator";
 import Pricing from "../sections/Pricing";
+import RecentNews from "../sections/RecentNews";
 const HomePage = () => {
   return (
     <>
@@ -23,6 +24,7 @@ const HomePage = () => {
       <Gallery />
       <BMICalculator />
       <Pricing />
+      <RecentNews />
     </>
   );
 };
