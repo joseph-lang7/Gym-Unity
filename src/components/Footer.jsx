@@ -1,6 +1,6 @@
 import Logo from "./Logo";
 import { FaFacebookF } from "react-icons/fa";
-import { FaInstagram } from "react-icons/fa";
+import { RiTwitterXLine } from "react-icons/ri";
 import { FaLinkedinIn } from "react-icons/fa";
 
 const Footer = () => {
@@ -18,7 +18,7 @@ const Footer = () => {
               <FaFacebookF />
             </div>
             <div className="p-2 bg-slate-300 rounded-full text-slate-600 hover:text-white hover:bg-red-700 transition-colors duration-300 cursor-pointer">
-              <FaInstagram />
+              <RiTwitterXLine />
             </div>
             <div className="p-2 bg-slate-300 rounded-full text-slate-600 hover:text-white hover:bg-red-700 transition-colors duration-300 cursor-pointer">
               <FaLinkedinIn />

@@ -9,7 +9,7 @@ import powerCleaning from "/gymPhotos/power-clean.jpg";
 import { FaLocationDot } from "react-icons/fa6";
 import { FaFacebook } from "react-icons/fa";
 import { FaSquareXTwitter } from "react-icons/fa6";
-import { PiInstagramLogoFill } from "react-icons/pi";
+import { IoLogoLinkedin } from "react-icons/io5";
 import { FaPhoneAlt } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
 import PropTypes from "prop-types";
@@ -93,10 +93,7 @@ const AboutSlidingCard = ({ handleClose, isVisible }) => {
         <div className="flex gap-3">
           <FaFacebook size={40} className="text-red-700 cursor-pointer" />
           <FaSquareXTwitter size={40} className="text-red-700 cursor-pointer" />
-          <PiInstagramLogoFill
-            size={40}
-            className="text-red-700 cursor-pointer"
-          />
+          <IoLogoLinkedin size={40} className="text-red-700 cursor-pointer" />
         </div>
       </div>
     </div>

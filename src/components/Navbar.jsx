@@ -70,8 +70,8 @@ const Navbar = () => {
       <nav
         className={`${
           isScrolled
-            ? "bg-black w-screen fixed px-5 py-5 flex justify-between items-center gap-3 transition-colors duration-500"
-            : "bg-transparent w-screen fixed px-5 py-5 flex justify-between items-center gap-3 transition-colors duration-500"
+            ? "bg-black w-screen fixed px-5 py-5 flex justify-between items-center gap-3 transition-colors duration-500 z-50"
+            : "bg-transparent w-screen fixed px-5 py-5 flex justify-between items-center gap-3 transition-colors duration-500 z-50"
         }`}
       >
         <Logo color="text-white" />
