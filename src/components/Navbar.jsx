@@ -68,7 +68,7 @@ const Navbar = () => {
                 : "bg-transparent w-screen fixed px-5 py-5 flex justify-between items-center gap-3 transition-colors duration-500"
             } ${mobileNav && "hidden"} z-50`}
           >
-            <Logo color="white" />
+            <Logo color="text-white" />
             <div className="flex items-center gap-5">
               <GiHamburgerMenu
                 size={40}

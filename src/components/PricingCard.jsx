@@ -2,7 +2,7 @@ import Button from "./Button";
 import PropTypes from "prop-types";
 const PricingCard = ({ tier, price, image, alt }) => {
   return (
-    <div className="flex flex-col w-[340px] xs:w-[380px] sm:w-[450px] h-auto border-2">
+    <div className="flex flex-col w-[340px] xs:w-[380px] sm:w-[480px] h-auto border-2">
       <img
         src={image}
         alt={alt}
