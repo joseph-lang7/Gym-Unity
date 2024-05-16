@@ -16,7 +16,7 @@ const RecentNews = () => {
           View Our Most Recent Posts
         </h3>
         <p className=" max-w-[700px] text-center">
-          Get the latest news, deals, and exclusive offers from GymUnity
+          Get the latest news, deals, and exclusive offers from GymUnity.
         </p>
       </div>
 

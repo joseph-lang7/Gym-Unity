@@ -10,6 +10,7 @@ import Gallery from "../components/Gallery";
 import BMICalculator from "../components/BMICalculator";
 import Pricing from "../sections/Pricing";
 import RecentNews from "../sections/RecentNews";
+import NeedATrainerBanner from "../sections/NeedATrainerBanner";
 const HomePage = () => {
   return (
     <>
@@ -25,6 +26,7 @@ const HomePage = () => {
       <BMICalculator />
       <Pricing />
       <RecentNews />
+      <NeedATrainerBanner />
     </>
   );
 };
