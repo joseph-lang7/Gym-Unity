@@ -48,12 +48,12 @@ const Navbar = () => {
     <>
       <div
         className={`${
-          mobileNav ? "translate-x-0" : "translate-x-[-200vw]"
-        } text-black fixed text-2xl h-screen w-screen flex flex-col justify-center items-center gap-7 bg-slate-100 transition-transform duration-700 z-50 ease-in-out`}
+          mobileNav ? "translate-x-0" : "translate-x-[-500vw]"
+        } text-black fixed text-2xl h-screen w-screen flex flex-col justify-center items-center gap-7 bg-slate-100 transition-transform duration-700 placeholder:ease-in-out z-50`}
       >
         <BiX
           size={40}
-          className="text-black hover:text-red-700 duration-200 transition-transform cursor-pointer fixed top-5 right-5 z-50 "
+          className="text-black hover:text-red-700 duration-200 transition-transform cursor-pointer fixed top-5 right-5 z-[50] "
           onClick={() => {
             setMobileNav(false);
             document.body.style.overflow = "scroll";
@@ -71,14 +71,26 @@ const Navbar = () => {
         className={`${
           isScrolled
             ? "bg-black w-screen fixed px-5 py-5 flex justify-between items-center gap-3 transition-colors duration-500 z-50"
-            : "bg-transparent w-screen fixed px-5 py-5 flex justify-between items-center gap-3 transition-colors duration-500 z-50"
+            : "bg-transparent w-screen fixed px-5 py-5 flex justify-between items-center gap-3 transition-colors duration-500 z-40"
         }`}
       >
-        <Logo color="text-white" />
+        <div className="w-[200px]">
+          <Logo color="text-white" />
+        </div>
+        <ul className="text-white hidden  h-full w-full 2xl:flex  justify-center items-center gap-7">
+          {navItems.map((navItem) => (
+            <li
+              key={navItem.href}
+              className="hover:text-red-700 transition-all duration-500"
+            >
+              <a href={navItem.href}>{navItem.label}</a>
+            </li>
+          ))}
+        </ul>
         <div className="flex items-center gap-5">
           <GiHamburgerMenu
             size={40}
-            className="text-white hover:text-red-700 duration-200 transition-all cursor-pointer"
+            className="text-white 2xl:hidden hover:text-red-700 duration-200 transition-all cursor-pointer"
             onClick={() => {
               setMobileNav(true);
               document.body.style.overflow = "hidden";
