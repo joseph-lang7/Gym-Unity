@@ -14,9 +14,13 @@ import { FaPhoneAlt } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
 import PropTypes from "prop-types";
 
-const AboutSlidingCard = ({ handleClose }) => {
+const AboutSlidingCard = ({ handleClose, isVisible }) => {
   return (
-    <div className="max-w-[500px] h-screen overflow-y-auto fixed bg-white p-5 flex flex-col gap-5 z-50 ">
+    <div
+      className={`${
+        isVisible ? "translate-x-0" : "translate-x-[-200vw]"
+      }  max-w-[500px] fixed transition-all duration-700 h-full overflow-y-auto  bg-white p-5 flex flex-col gap-5 text-black z-50 ease-in-out`}
+    >
       <div className="flex justify-between items-center">
         <Logo color="black" />
         <BiX
@@ -100,6 +104,7 @@ const AboutSlidingCard = ({ handleClose }) => {
 };
 AboutSlidingCard.propTypes = {
   handleClose: PropTypes.func,
+  isVisible: PropTypes.bool,
 };
 
 export default AboutSlidingCard;
