@@ -7,6 +7,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import SchedulePage from "./pages/SchedulePage";
 import BlogPage from "./pages/BlogPage";
 import PricingPage from "./pages/PricingPage";
+import ClassesPage from "./pages/ClassesPage";
 function App() {
   return (
     <BrowserRouter>
@@ -17,6 +18,7 @@ function App() {
         <Route path="/schedule" element={<SchedulePage />} />
         <Route path="/blog" element={<BlogPage />} />
         <Route path="/pricing" element={<PricingPage />} />
+        <Route path="/classes" element={<ClassesPage />} />
       </Routes>
       <Footer />
     </BrowserRouter>
