@@ -4,6 +4,7 @@ import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import AboutPage from "./pages/AboutPage";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+import SchedulePage from "./pages/SchedulePage";
 function App() {
   return (
     <BrowserRouter>
@@ -11,6 +12,7 @@ function App() {
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/about" element={<AboutPage />} />
+        <Route path="/schedule" element={<SchedulePage />} />
       </Routes>
       <Footer />
     </BrowserRouter>
