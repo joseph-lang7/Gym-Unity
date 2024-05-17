@@ -47,7 +47,7 @@ export const WhoWeAre = () => {
           <Button
             bgColor="bg-slate-800"
             textColor="text-white"
-            content="TAKE A TOUR"
+            content="Take A Tour"
           />
         </div>
         <div

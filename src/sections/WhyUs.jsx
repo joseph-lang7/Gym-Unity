@@ -1,5 +1,5 @@
 import Button from "../components/Button";
-
+import { Link } from "react-router-dom";
 const WhyUs = () => {
   return (
     <div className="flex w-full md:h-[1100px]  h-[1600px] bg-black justify-center mt-[110px]">
@@ -84,11 +84,13 @@ const WhyUs = () => {
                 <br /> Water
               </p>
             </div>
-            <Button
-              bgColor="bg-slate-700"
-              content="OUR CLASSES"
-              textColor="text-white"
-            />
+            <Link to="/classes">
+              <Button
+                bgColor="bg-slate-700"
+                content="Our Classes"
+                textColor="text-white"
+              />
+            </Link>
           </div>
         </div>
       </div>

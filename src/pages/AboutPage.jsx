@@ -2,7 +2,7 @@ import Hero2 from "../sections/Hero2";
 import Button from "../components/Button";
 import { GiArcheryTarget } from "react-icons/gi";
 import { LiaMountainSolid } from "react-icons/lia";
-
+import { Link } from "react-router-dom";
 const AboutPage = () => {
   return (
     <div className="h-auto max-w-screen">
@@ -28,11 +28,13 @@ const AboutPage = () => {
                 collaborate closely with you to craft a tailored regimen that
                 aligns with your individual objectives.
               </p>
-              <Button
-                bgColor="bg-slate-800"
-                textColor="text-white"
-                content="CONTACT US"
-              />
+              <Link to="/contact">
+                <Button
+                  bgColor="bg-slate-800"
+                  textColor="text-white"
+                  content="Contact Us"
+                />
+              </Link>
             </div>
             <div className="w-full h-full flex-1">
               <img

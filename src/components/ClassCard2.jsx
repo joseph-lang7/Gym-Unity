@@ -2,6 +2,7 @@ import Button from "./Button";
 import { FaRegClock } from "react-icons/fa";
 import { IoPersonOutline } from "react-icons/io5";
 import PropTypes from "prop-types";
+import { Link } from "react-router-dom";
 const ClassCard2 = ({ classTitle, instructor, time, image, alt }) => {
   return (
     <div className="w-full h-[500px] rounded-lg relative">
@@ -25,12 +26,14 @@ const ClassCard2 = ({ classTitle, instructor, time, image, alt }) => {
             <p>{time}</p>
           </div>
         </div>
-        <Button
-          bgColor="bg-white"
-          textColor="text-black"
-          content="Join Now"
-          width="w-[170px]"
-        />
+        <Link to="/contact">
+          <Button
+            bgColor="bg-white"
+            textColor="text-black"
+            content="Join Now"
+            width="w-[170px]"
+          />
+        </Link>
       </div>
     </div>
   );

@@ -7,6 +7,7 @@ import { BiX } from "react-icons/bi";
 import { GiHamburgerMenu } from "react-icons/gi";
 import AboutSlidingCard from "./AboutSlidingCard";
 import { useEffect } from "react";
+import { Link } from "react-router-dom";
 const Navbar = () => {
   const navItems = [
     { label: "Home", href: "/" },
@@ -74,9 +75,9 @@ const Navbar = () => {
             : "bg-transparent w-screen fixed px-5 py-5 flex justify-between items-center gap-3 transition-colors duration-500 z-40"
         }`}
       >
-        <div className="w-[200px]">
+        <Link to="/" className="w-[200px]">
           <Logo color="text-white" />
-        </div>
+        </Link>
         <ul className="text-white hidden  h-full w-full 2xl:flex  justify-center items-center gap-7">
           {navItems.map((navItem) => (
             <li
@@ -108,12 +109,15 @@ const Navbar = () => {
               setAboutSection(!aboutSection);
             }}
           />
-          <div className="cursor-pointer pl-2 h-[65px] w-[250px] border border-white justify-start items-center gap-2 rounded-md hidden md:flex">
+          <Link
+            to="/contact"
+            className="cursor-pointer pl-2 h-[65px] w-[250px] border border-white justify-start items-center gap-2 rounded-md hidden md:flex"
+          >
             <div className="transform hover:rotate-360 transition duration-700 ease-in-out h-[45px] w-[45px] bg-red-700 flex justify-center items-center rounded-md">
               <FiPlus className="text-white" size={25} />
             </div>
             <p className="text-white font-bold">Join Class Now</p>
-          </div>
+          </Link>
         </div>
       </nav>
       <AboutSlidingCard

@@ -114,7 +114,7 @@ const BMICalculator = () => {
             </div>
 
             <button className="px-2 py-3 bg-slate-700 w-[200px] rounded-md text-white hover:bg-red-700 transition-colors duration-300">
-              CALCULATE
+              Calculate
             </button>
           </form>
         </div>

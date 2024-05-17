@@ -1,4 +1,5 @@
 import PropTypes from "prop-types";
+import { Link } from "react-router-dom";
 const ScheduleCard = ({ classTitle, trainer, time }) => {
   return (
     <div className="w-full flex justify-between h-auto p-5 bg-slate-100 rounded-md">
@@ -14,11 +15,11 @@ const ScheduleCard = ({ classTitle, trainer, time }) => {
         <p className="text-xs text-slate-500">Trainer</p>
         <p className="font-bold">{trainer}</p>
       </div>
-      <div>
+      <Link to="/contact">
         <button className="bg-slate-600 text-white px-6 py-2 border rounded-full cursor-pointer hover:text-white hover:bg-red-700 transition-colors duration-500 font-bold text-sm">
           Join Now
         </button>
-      </div>
+      </Link>
     </div>
   );
 };

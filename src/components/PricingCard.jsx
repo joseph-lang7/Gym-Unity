@@ -1,5 +1,6 @@
 import Button from "./Button";
 import PropTypes from "prop-types";
+import { Link } from "react-router-dom";
 const PricingCard = ({ tier, price, image, alt }) => {
   return (
     <div className="flex flex-col w-[340px] xs:w-[380px] sm:w-[480px] h-auto border-2">
@@ -22,12 +23,14 @@ const PricingCard = ({ tier, price, image, alt }) => {
             <p className="text-slate-500">Meditation</p>
             <p className="text-slate-500">Boxing</p>
             <p className="text-slate-500">Gymnastics</p>
-            <Button
-              bgColor="bg-red-700"
-              textColor="text-white"
-              content="Purchase"
-              width="100px"
-            />
+            <Link to="/contact">
+              <Button
+                bgColor="bg-red-700"
+                textColor="text-white"
+                content="Purchase"
+                width="100px"
+              />
+            </Link>
           </div>
         </div>
       </div>

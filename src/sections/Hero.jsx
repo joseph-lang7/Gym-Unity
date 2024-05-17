@@ -2,7 +2,7 @@ import { TfiLinkedin } from "react-icons/tfi";
 import { BsTwitterX } from "react-icons/bs";
 import { FaFacebook } from "react-icons/fa";
 import Button from "../components/Button";
-
+import { Link } from "react-router-dom";
 const Hero = () => {
   return (
     <div
@@ -22,12 +22,14 @@ const Hero = () => {
               <h3 className="font-bold">MAKE YOUR BODY</h3>
               <h3>FIT & PERFECT</h3>
             </div>
-            <Button
-              bgColor="bg-white"
-              textColor="text-black"
-              content="OUR CLASSES"
-              width="w-[220px]"
-            />
+            <Link to="/classes">
+              <Button
+                bgColor="bg-white"
+                textColor="text-black"
+                content="Our Classes"
+                width="w-[200px]"
+              />
+            </Link>
           </div>
           <div className="hidden lg:flex lg:flex-col lg:items-center gap-4 text-white">
             <p className=" h-full rotate-90 font-bold text-center mb-4">
