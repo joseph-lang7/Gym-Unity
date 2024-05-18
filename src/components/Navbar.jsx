@@ -98,10 +98,12 @@ const Navbar = () => {
             }}
           />
 
-          <FaRegUser
-            className="text-white hover:text-red-700 duration-200 cursor-pointer"
-            size={30}
-          />
+          <Link to="/signin">
+            <FaRegUser
+              className="text-white hover:text-red-700 duration-200 cursor-pointer"
+              size={30}
+            />
+          </Link>
           <FaChartBar
             className="text-white hover:text-red-700 duration-200 cursor-pointer"
             size={30}

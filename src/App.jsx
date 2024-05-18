@@ -9,6 +9,7 @@ import BlogPage from "./pages/BlogPage";
 import PricingPage from "./pages/PricingPage";
 import ClassesPage from "./pages/ClassesPage";
 import ContactPage from "./pages/ContactPage";
+import SigninPage from "./pages/SigninPage";
 function App() {
   return (
     <BrowserRouter>
@@ -21,6 +22,7 @@ function App() {
         <Route path="/pricing" element={<PricingPage />} />
         <Route path="/classes" element={<ClassesPage />} />
         <Route path="/contact" element={<ContactPage />} />
+        <Route path="/signin" element={<SigninPage />} />
       </Routes>
       <Footer />
     </BrowserRouter>
