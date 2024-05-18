@@ -54,7 +54,7 @@ const SchedulePage = () => {
         </div>
       </div>
       <div className="w-full flex justify-center mb-60">
-        <div className="w-[1400px] flex flex-col gap-3">
+        <div className="w-full px-8 md:w-[1400px] flex flex-col gap-3">
           {selectedButton === "Monday" && (
             <>
               <ScheduleCard

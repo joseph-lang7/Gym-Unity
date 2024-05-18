@@ -10,6 +10,7 @@ import PricingPage from "./pages/PricingPage";
 import ClassesPage from "./pages/ClassesPage";
 import ContactPage from "./pages/ContactPage";
 import SigninPage from "./pages/SigninPage";
+import SignupPage from "./pages/SignupPage";
 function App() {
   return (
     <BrowserRouter>
@@ -23,6 +24,7 @@ function App() {
         <Route path="/classes" element={<ClassesPage />} />
         <Route path="/contact" element={<ContactPage />} />
         <Route path="/signin" element={<SigninPage />} />
+        <Route path="/signup" element={<SignupPage />} />
       </Routes>
       <Footer />
     </BrowserRouter>
