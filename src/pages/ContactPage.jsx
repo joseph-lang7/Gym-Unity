@@ -2,6 +2,7 @@ import Hero2 from "../sections/Hero2";
 import { FaFacebookF } from "react-icons/fa";
 import { RiTwitterXLine } from "react-icons/ri";
 import { FaLinkedinIn } from "react-icons/fa";
+import Button from "../components/Button";
 const ContactPage = () => {
   const classes = [
     "Running",
@@ -116,9 +117,14 @@ const ContactPage = () => {
                   className="w-full h-[200px] resize-none p-2 border text-xs"
                 ></textarea>
                 <div className="w-full flex justify-center">
-                  <button className="w-[150px] py-3 font-bold bg-red-700 text-white text-sm">
+                  {/* <button className="w-[150px] py-3 font-bold bg-red-700 text-white text-sm">
                     Submit
-                  </button>
+                  </button> */}
+                  <Button
+                    bgColor="bg-red-700"
+                    textColor="text-white"
+                    content="Submit"
+                  />
                 </div>
               </div>
             </form>
