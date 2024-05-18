@@ -1,9 +1,7 @@
 import "./App.css";
 import HomePage from "./pages/HomePage";
-import Navbar from "./components/Navbar";
-import Footer from "./components/Footer";
 import AboutPage from "./pages/AboutPage";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
 import SchedulePage from "./pages/SchedulePage";
 import BlogPage from "./pages/BlogPage";
 import PricingPage from "./pages/PricingPage";
@@ -13,8 +11,7 @@ import SigninPage from "./pages/SigninPage";
 import SignupPage from "./pages/SignupPage";
 function App() {
   return (
-    <BrowserRouter>
-      <Navbar />
+    <div>
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/about" element={<AboutPage />} />
@@ -26,8 +23,7 @@ function App() {
         <Route path="/signin" element={<SigninPage />} />
         <Route path="/signup" element={<SignupPage />} />
       </Routes>
-      <Footer />
-    </BrowserRouter>
+    </div>
   );
 }
 
