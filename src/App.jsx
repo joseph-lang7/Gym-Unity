@@ -12,7 +12,7 @@ import SignupPage from "./pages/SignupPage";
 import LoadingSpinner from "./components/LoadingSpinner";
 import { useState, useEffect } from "react";
 import Navbar from "./components/Navbar.jsx";
-import Footer from "./components/Footer.jsx";
+import Footer from "./components/footer/Footer.jsx";
 function App() {
   const [loading, setLoading] = useState(true);
 
