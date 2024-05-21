@@ -18,10 +18,8 @@ const AboutSlidingCard = ({ handleClose, isVisible }) => {
   return (
     <div
       className={`${
-        isVisible
-          ? "translate-x-0 max-w-[500px] fixed transition-all duration-500 h-full overflow-y-auto  bg-white p-5 flex flex-col gap-5 text-black z-50"
-          : "translate-x-[-200vw] max-w-[500px] fixed transition-all duration-500 h-full overflow-y-auto  bg-white p-5 flex flex-col gap-5 text-black z-50"
-      }  `}
+        isVisible ? "translate-x-0" : "translate-x-[-200vw]"
+      }  max-w-[500px] fixed transition-all duration-700 h-full overflow-y-auto  bg-white p-5 flex flex-col gap-5 text-black z-50 ease-in-out`}
     >
       <div className="flex justify-between items-center">
         <Logo color="black" />
