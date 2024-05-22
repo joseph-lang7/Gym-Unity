@@ -27,7 +27,6 @@ const Hero = () => {
                 bgColor="bg-white"
                 textColor="text-black"
                 content="Our Classes"
-                width="w-[200px]"
               />
             </Link>
           </div>
