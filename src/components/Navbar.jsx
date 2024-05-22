@@ -50,11 +50,11 @@ const Navbar = () => {
       <div
         className={`${
           mobileNav ? "translate-x-0" : "translate-x-[-500vw]"
-        } text-black fixed text-2xl h-screen w-screen flex flex-col justify-center items-center gap-7 bg-slate-100 transition-transform duration-700 placeholder:ease-in-out z-50`}
+        } text-black fixed text-2xl h-screen w-screen flex flex-col justify-center items-center gap-7 bg-slate-100 transition-transform duration-700 placeholder:ease-in-out z-40`}
       >
         <BiX
           size={40}
-          className="text-black hover:text-red-700 duration-200 transition-transform cursor-pointer fixed top-5 right-5 z-[50] "
+          className="text-black hover:text-red-700 duration-200 transition-transform cursor-pointer fixed top-5 right-5 z-50 "
           onClick={() => {
             setMobileNav(false);
             document.body.style.overflow = "scroll";
@@ -71,8 +71,8 @@ const Navbar = () => {
       <nav
         className={`${
           isScrolled
-            ? "bg-black w-screen fixed px-5 py-5 flex justify-between items-center gap-3 transition-colors duration-500 z-50"
-            : "bg-transparent w-screen fixed px-5 py-5 flex justify-between items-center gap-3 transition-colors duration-500 z-40"
+            ? "bg-black w-screen fixed px-5 py-5 flex justify-between items-center gap-3 transition-colors duration-500 z-30"
+            : "bg-transparent w-screen fixed px-5 py-5 flex justify-between items-center gap-3 transition-colors duration-500 z-30"
         }`}
       >
         <Link to="/" className="w-[200px]">
