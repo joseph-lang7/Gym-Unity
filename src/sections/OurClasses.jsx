@@ -33,10 +33,10 @@ const OurClasses = () => {
             <ClassCard
               Icon={
                 <GiRunningShoe
-                  size={30}
+                  size={40}
                   className={`text-${
                     cardioIsHovered ? "red-700" : "white"
-                  } absolute bottom-[150px] left-[25px] transition-colors duration-300`}
+                  } absolute bottom-[145px] left-[40px] transition-colors duration-300`}
                 />
               }
               bgPath="/gymPhotos/running.jpg"
@@ -50,10 +50,10 @@ const OurClasses = () => {
             <ClassCard
               Icon={
                 <TbKarate
-                  size={30}
+                  size={40}
                   className={`text-${
                     karateIsHovered ? "red-700" : "white"
-                  } absolute bottom-[150px] left-[25px] transition-colors duration-300`}
+                  } absolute bottom-[145px] left-[40px] transition-colors duration-300`}
                 />
               }
               bgPath="/gymPhotos/karate.jpg"
@@ -66,10 +66,10 @@ const OurClasses = () => {
             <ClassCard
               Icon={
                 <MdOutlineSportsGymnastics
-                  size={30}
+                  size={40}
                   className={`text-${
                     gymnasticsIsHovered ? "red-700" : "white"
-                  } absolute bottom-[150px] left-[25px] transition-colors duration-300`}
+                  } absolute bottom-[145px] left-[40px] transition-colors duration-300`}
                 />
               }
               bgPath="/gymPhotos/gymnastics.jpg"
@@ -82,10 +82,10 @@ const OurClasses = () => {
             <ClassCard
               Icon={
                 <GiMeditation
-                  size={30}
+                  size={40}
                   className={`text-${
                     meditationIsHovered ? "red-700" : "white"
-                  } absolute bottom-[150px] left-[25px] transition-colors duration-300`}
+                  } absolute bottom-[145px] left-[40px] transition-colors duration-300`}
                 />
               }
               bgPath="/gymPhotos/meditation.jpg"
@@ -98,10 +98,10 @@ const OurClasses = () => {
             <ClassCard
               Icon={
                 <GiBoxingGlove
-                  size={30}
+                  size={40}
                   className={`text-${
                     boxingIsHovered ? "red-700" : "white"
-                  } absolute bottom-[150px] left-[25px] transition-colors duration-300`}
+                  } absolute bottom-[145px] left-[40px] transition-colors duration-300`}
                 />
               }
               bgPath="/gymPhotos/boxing.jpg"
@@ -114,10 +114,10 @@ const OurClasses = () => {
             <ClassCard
               Icon={
                 <IoBarbell
-                  size={30}
+                  size={40}
                   className={`text-${
                     workoutIsHovered ? "red-700" : "white"
-                  } absolute bottom-[150px] left-[25px] transition-colors duration-300`}
+                  } absolute bottom-[145px] left-[40px] transition-colors duration-300`}
                 />
               }
               bgPath="/gymPhotos/working-out.jpg"

@@ -32,8 +32,8 @@ const ClassCard = ({
         <div
           className={`  ${
             isHovered
-              ? "bg-white opacity-100 absolute left-[-55px] rounded-full  bottom-32 w-[140px] h-[60px] rotate-45 text-white  transition-all duration-500"
-              : "bg-slate-300 opacity-45 absolute left-[-55px] rounded-full  bottom-32 w-[140px] h-[60px] rotate-45 text-white  transition-all duration-500 "
+              ? "bg-white absolute left-[-45px] rounded-full  bottom-28 w-[140px] h-[65px] rotate-12 text-white  transition-all duration-500 "
+              : "bg-slate-300 opacity-45 absolute left-[-45px] rounded-full  bottom-28 w-[140px] h-[65px] rotate-12 text-white  transition-all duration-500 "
           }`}
         ></div>
         <div className="flex flex-col absolute  gap-2 left-10 bottom-7">
