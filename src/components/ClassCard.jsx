@@ -35,14 +35,15 @@ const ClassCard = ({
               ? "bg-white absolute left-[-45px] rounded-full  bottom-28 w-[140px] h-[65px] rotate-12 text-white  transition-all duration-500 "
               : "bg-slate-300 opacity-45 absolute left-[-45px] rounded-full  bottom-28 w-[140px] h-[65px] rotate-12 text-white  transition-all duration-500 "
           }`}
-        ></div>
+        >
+          {Icon}
+        </div>
         <div className="flex flex-col absolute  gap-2 left-10 bottom-7">
           <h3 className="text-white font-bold text-xl">{classTitle}</h3>
           <div className="w-full h-full bg-red-700 py-1 px-2">
             <p className="text-white text-sm">{times}</p>
           </div>
         </div>
-        {Icon}
       </div>
     </div>
   );

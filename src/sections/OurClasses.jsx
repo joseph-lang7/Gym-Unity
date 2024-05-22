@@ -32,12 +32,14 @@ const OurClasses = () => {
           <div className="grid md:grid-cols-4 grid-cols-1 w-full h-full gap-5">
             <ClassCard
               Icon={
-                <GiRunningShoe
-                  size={40}
-                  className={`text-${
-                    cardioIsHovered ? "red-700" : "white"
-                  } absolute bottom-[145px] left-[40px] transition-colors duration-300`}
-                />
+                <div className="flex w-full h-full justify-end items-center pr-2">
+                  <GiRunningShoe
+                    size={40}
+                    className={`text-${
+                      cardioIsHovered ? "red-700" : "white"
+                    }  transition-colors duration-300`}
+                  />
+                </div>
               }
               bgPath="/gymPhotos/running.jpg"
               large={true}
@@ -49,12 +51,14 @@ const OurClasses = () => {
             />
             <ClassCard
               Icon={
-                <TbKarate
-                  size={40}
-                  className={`text-${
-                    karateIsHovered ? "red-700" : "white"
-                  } absolute bottom-[145px] left-[40px] transition-colors duration-300`}
-                />
+                <div className="flex w-full h-full justify-end items-center pr-2">
+                  <TbKarate
+                    size={40}
+                    className={`text-${
+                      karateIsHovered ? "red-700" : "white"
+                    }  transition-colors duration-300`}
+                  />
+                </div>
               }
               bgPath="/gymPhotos/karate.jpg"
               classTitle="Karate"
@@ -65,12 +69,14 @@ const OurClasses = () => {
             />
             <ClassCard
               Icon={
-                <MdOutlineSportsGymnastics
-                  size={40}
-                  className={`text-${
-                    gymnasticsIsHovered ? "red-700" : "white"
-                  } absolute bottom-[145px] left-[40px] transition-colors duration-300`}
-                />
+                <div className="flex w-full h-full justify-end items-center pr-2">
+                  <MdOutlineSportsGymnastics
+                    size={40}
+                    className={`text-${
+                      gymnasticsIsHovered ? "red-700" : "white"
+                    }  transition-colors duration-300`}
+                  />
+                </div>
               }
               bgPath="/gymPhotos/gymnastics.jpg"
               classTitle="Gymnastics"
@@ -81,12 +87,14 @@ const OurClasses = () => {
             />
             <ClassCard
               Icon={
-                <GiMeditation
-                  size={40}
-                  className={`text-${
-                    meditationIsHovered ? "red-700" : "white"
-                  } absolute bottom-[145px] left-[40px] transition-colors duration-300`}
-                />
+                <div className="flex w-full h-full justify-end items-center pr-2">
+                  <GiMeditation
+                    size={40}
+                    className={`text-${
+                      meditationIsHovered ? "red-700" : "white"
+                    } transition-colors duration-300`}
+                  />
+                </div>
               }
               bgPath="/gymPhotos/meditation.jpg"
               classTitle="Meditation"
@@ -97,12 +105,14 @@ const OurClasses = () => {
             />
             <ClassCard
               Icon={
-                <GiBoxingGlove
-                  size={40}
-                  className={`text-${
-                    boxingIsHovered ? "red-700" : "white"
-                  } absolute bottom-[145px] left-[40px] transition-colors duration-300`}
-                />
+                <div className="flex w-full h-full justify-end items-center pr-2">
+                  <GiBoxingGlove
+                    size={40}
+                    className={`text-${
+                      boxingIsHovered ? "red-700" : "white"
+                    } transition-colors duration-300`}
+                  />
+                </div>
               }
               bgPath="/gymPhotos/boxing.jpg"
               classTitle="Boxing"
@@ -113,12 +123,14 @@ const OurClasses = () => {
             />
             <ClassCard
               Icon={
-                <IoBarbell
-                  size={40}
-                  className={`text-${
-                    workoutIsHovered ? "red-700" : "white"
-                  } absolute bottom-[145px] left-[40px] transition-colors duration-300`}
-                />
+                <div className="flex w-full h-full justify-end items-center pr-2">
+                  <IoBarbell
+                    size={40}
+                    className={`text-${
+                      workoutIsHovered ? "red-700" : "white"
+                    } transition-colors duration-300`}
+                  />
+                </div>
               }
               bgPath="/gymPhotos/working-out.jpg"
               large={true}
