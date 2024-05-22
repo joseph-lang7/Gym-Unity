@@ -30,7 +30,6 @@ const BlogCard = ({ src, alt, date, category, title }) => {
             bgColor="bg-red-700"
             textColor="text-white"
             content="Read Now"
-            width="w-[180px]"
           />
         </div>
       </div>

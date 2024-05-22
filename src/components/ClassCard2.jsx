@@ -31,7 +31,6 @@ const ClassCard2 = ({ classTitle, instructor, time, image, alt }) => {
             bgColor="bg-white"
             textColor="text-black"
             content="Join Now"
-            width="w-[170px]"
           />
         </Link>
       </div>
