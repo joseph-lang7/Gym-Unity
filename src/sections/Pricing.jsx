@@ -11,15 +11,15 @@ const Pricing = () => {
             PRICING
           </p>
         </div>
-        <h3 className="font-bold text-4xl text-black text-center ">
+        <h3 className="font-bold text-4xl text-black text-center">
           Pricing Plans
         </h3>
-        <p className=" max-w-[700px] text-center">
+        <p className="max-w-[300px] lg:max-w-[700px] text-center">
           Check out our various pricing plans to find a plan that fits your
           needs.
         </p>
       </div>
-      <div className="w-full overflow-hidden flex justify-center flex-wrap items-center gap-5 mt-10 ">
+      <div className="w-full overflow-hidden flex justify-center flex-wrap items-center gap-5 mt-10 px-5 ">
         <PricingCard
           tier="Beginner"
           price="49.99"

@@ -3,14 +3,14 @@ import PropTypes from "prop-types";
 import { Link } from "react-router-dom";
 const PricingCard = ({ tier, price, image, alt }) => {
   return (
-    <div className="flex flex-col w-[340px] xs:w-[380px] sm:w-[480px] h-auto border-2">
+    <div className="flex flex-col w-auto h-auto border-2">
       <img
         src={image}
         alt={alt}
         className="object-cover h-[300px] w-full grayscale hover:grayscale-0 transition-all duration-300"
       />
       <div className="w-full flex justify-center h-auto ">
-        <div className=" w-[350px] h-full bg-white translate-y-[-50px] flex items-center flex-col justify-center p-3">
+        <div className=" w-auto h-full bg-white translate-y-[-50px] flex items-center flex-col justify-center p-10">
           <h4 className="mb-3 font-bold">{tier}</h4>
           <div className="flex flex-col gap-5 items-center">
             <h4>
