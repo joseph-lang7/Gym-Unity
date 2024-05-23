@@ -72,7 +72,7 @@ const Navbar = () => {
         className={`${
           isScrolled
             ? "bg-black w-screen fixed px-5 py-5 flex justify-between items-center gap-3 transition-colors duration-500 z-30"
-            : "bg-transparent w-screen fixed px-5 py-5 flex justify-between items-center gap-3 transition-colors duration-500 z-40"
+            : "bg-transparent w-screen fixed px-5 py-5 flex justify-between items-center gap-3 transition-colors duration-500 z-30"
         }`}
       >
         <Link to="/" className="w-[200px]">
