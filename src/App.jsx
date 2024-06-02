@@ -1,16 +1,18 @@
 import "./App.css";
-import HomePage from "./pages/HomePage";
-import AboutPage from "./pages/AboutPage";
-import { Routes, Route } from "react-router-dom";
-import SchedulePage from "./pages/SchedulePage";
-import BlogPage from "./pages/BlogPage";
-import PricingPage from "./pages/PricingPage";
-import ClassesPage from "./pages/ClassesPage";
-import ContactPage from "./pages/ContactPage";
-import SigninPage from "./pages/SigninPage";
-import SignupPage from "./pages/SignupPage";
-import Navbar from "./components/Navbar.jsx";
-import Footer from "./components/footer/Footer.jsx";
+import { Route, Routes } from "react-router-dom";
+import {
+  AboutPage,
+  BlogPage,
+  ClassesPage,
+  ContactPage,
+  HomePage,
+  PricingPage,
+  SchedulePage,
+  SigninPage,
+  SignupPage,
+} from "./pages";
+import { Navbar, Footer } from "./components";
+
 function App() {
   return (
     <div>

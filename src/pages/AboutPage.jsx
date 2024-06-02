@@ -1,6 +1,5 @@
-import Hero2 from "../sections/Hero2";
-import AboutGrid from "../pageComponents/about/AboutGrid";
-import OurMission from "../pageComponents/about/OurMission";
+import Hero2 from "../components/hero2/Hero2";
+import { AboutGrid, OurMission } from "../pageComponents/aboutPage";
 const AboutPage = () => {
   return (
     <div className="h-auto max-w-screen">

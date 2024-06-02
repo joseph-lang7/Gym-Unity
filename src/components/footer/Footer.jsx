@@ -1,5 +1,4 @@
-import BrandInfo from "./BrandInfo";
-import Classes from "./Classes";
+import { Classes, BrandInfo } from "./components";
 const Footer = () => {
   return (
     <div className="max-w-screen h-auto flex justify-center px-10 py-10">

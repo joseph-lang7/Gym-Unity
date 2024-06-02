@@ -1,6 +1,5 @@
-import Hero2 from "../sections/Hero2";
-import AuthForm from "../components/AuthForm";
-
+import Hero2 from "../components/hero2/Hero2";
+import AuthForm from "../components/authForm/AuthForm";
 const SignupPage = () => {
   return (
     <div>

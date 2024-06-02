@@ -1,0 +1,9 @@
+export { default as AboutPage } from "./AboutPage";
+export { default as BlogPage } from "./BlogPage";
+export { default as ClassesPage } from "./ClassesPage";
+export { default as ContactPage } from "./ContactPage";
+export { default as HomePage } from "./HomePage";
+export { default as PricingPage } from "./PricingPage";
+export { default as SchedulePage } from "./SchedulePage";
+export { default as SigninPage } from "./SigninPage";
+export { default as SignupPage } from "./SignupPage";

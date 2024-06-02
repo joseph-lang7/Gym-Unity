@@ -1,0 +1,12 @@
+export { default as Benefits } from "./benefits/Benefits";
+export { default as BMICalculator } from "./bmiCalculator/BMICalculator";
+export { default as FeaturedOnBanner } from "./featuredOnBanner/FeaturedOnBanner";
+export { default as Gallery } from "./gallery/Gallery";
+export { default as Hero } from "./hero/Hero";
+export { default as NeedATrainerBanner } from "./needATrainerBanner/NeedATrainerBanner";
+export { default as OurClasses } from "./ourClasses/OurClasses";
+export { default as RecentNews } from "./recentNews/RecentNews";
+export { default as Testimonials } from "./testimonials/Testimonials";
+export { default as Trainers } from "./trainers/Trainers";
+export { default as WhoWeAre } from "./whoWeAre/WhoWeAre";
+export { default as WhyUs } from "./whyUs/WhyUs";

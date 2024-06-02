@@ -1,6 +1,5 @@
-import Hero2 from "../sections/Hero2";
-import Pricing from "../sections/Pricing";
-
+import Hero2 from "../components/hero2/Hero2";
+import Pricing from "../components/pricing/Pricing";
 const PricingPage = () => {
   return (
     <div className="bg-cover bg-center w-auto h-auto">

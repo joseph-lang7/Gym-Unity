@@ -1,5 +1,5 @@
-import Classes from "../pageComponents/classes/Classes";
-import Hero2 from "../sections/Hero2";
+import { Classes } from "../pageComponents/classesPage";
+import Hero2 from "../components/hero2/Hero2";
 import { useState } from "react";
 const ClassesPage = () => {
   const [showMore, setShowMore] = useState(false);

@@ -1,7 +1,6 @@
 import { useState } from "react";
-import Hero2 from "../sections/Hero2";
-import DayButtons from "../pageComponents/schedule/DayButtons";
-import Classes from "../pageComponents/schedule/Classes";
+import Hero2 from "../components/hero2/Hero2";
+import { DayButtons, Classes } from "../pageComponents/schedulePage";
 const SchedulePage = () => {
   const [selectedButton, setButtonSelected] = useState("Monday");
 

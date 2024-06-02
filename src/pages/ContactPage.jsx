@@ -1,7 +1,5 @@
-import Hero2 from "../sections/Hero2";
-import Info from "../pageComponents/contact/Info";
-import Form from "../pageComponents/contact/Form";
-import Map from "../pageComponents/contact/Map";
+import Hero2 from "../components/hero2/Hero2";
+import { Form, Info, Map } from "../pageComponents/contactPage";
 const ContactPage = () => {
   const classes = [
     "Running",

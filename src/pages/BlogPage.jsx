@@ -1,11 +1,13 @@
-import Categories from "../pageComponents/blog/Categories";
-import DiscountCard from "../pageComponents/blog/DiscountCard";
-import PopularTags from "../pageComponents/blog/PopularTags";
-import Posts from "../pageComponents/blog/Posts";
-import RecentPosts from "../pageComponents/blog/RecentPosts";
-import SearchBar from "../pageComponents/blog/SearchBar";
-import Hero2 from "../sections/Hero2";
+import {
+  Categories,
+  Posts,
+  SearchBar,
+  RecentPosts,
+  PopularTags,
+  DiscountCard,
+} from "../pageComponents/blogPage";
 
+import Hero2 from "../components/hero2/Hero2";
 const BlogPage = () => {
   return (
     <div>
