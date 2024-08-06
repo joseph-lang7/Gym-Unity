@@ -1,5 +1,5 @@
 <div align="center">
-    <img src="https://skillicons.dev/icons?i=react,tailwind,vite" />
+    <img src="https://skillicons.dev/icons?i=react,tailwind,vite,javascript" />
 
 <h1 align="center" style="color:white;">
 Gym Unity
@@ -9,7 +9,7 @@ Gym Unity
      style="float: left; margin-right: 10px;" />
 </div>
 <p style="text-align:center; color:white; margin-top:350px;" >
-A user interface application that allows users to view class schedules, membership options, and other resources to help them achieve their fitness goals.
+A front-end application that allows users to view class schedules, membership options, and other resources to help them achieve their fitness goals.
 </p>
 <a style="text-decoration:underline;" href="https://gymunity-jl.netlify.app/">Live site</a>
 <h2 style="color:white;">
