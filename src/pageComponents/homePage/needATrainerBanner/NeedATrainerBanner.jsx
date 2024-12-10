@@ -14,7 +14,7 @@ const NeedATrainerBanner = () => {
             bgColor="bg-red-700"
             textColor="text-white"
             content="Purchase Now"
-            width="w-[230px]"
+            width="w-[185px]"
           />
         </div>
       </div>

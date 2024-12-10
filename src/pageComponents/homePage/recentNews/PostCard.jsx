@@ -14,7 +14,7 @@ const PostCard = ({ date, title, description }) => {
             bgColor="bg-red-700"
             textColor="text-white"
             content="Read More"
-            width="w-[190px]"
+            width="w-[160px]"
           />
         </div>
       </div>
