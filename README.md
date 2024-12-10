@@ -1,5 +1,5 @@
 <div align="center">
-    <img src="https://skillicons.dev/icons?i=react,tailwind,vite,javascript" />
+    <img src="https://skillicons.dev/icons?i=react,tailwind,vite,javascript,jest,babel" />
 
 <h1 align="center" style="color:white;">
 Gym Unity
